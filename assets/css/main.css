@@ -12,8 +12,35 @@ body {
   background-color: #444444;
 }
 header {
-  background-color: #FFBD00;
+  /* background: linear-gradient(to bottom, #ff0000, #ffff00, #00ff00); */
+  background-color: #dfb306;
+  overflow: hidden;
+  transition: height 0.35s ease-in-out, background-color 0.5s ease-in-out;
 } 
+#navigation {
+  /* display: none; */
+  list-style: none;
+  margin: 0;
+  padding: 0 1.125rem;
+  /* background-color: #FFE376; */
+  height: 0;
+  overflow: hidden;
+  transition: height 0.35s ease-in-out;
+  font-family: Roboto;
+}
+#navigation > li {
+  text-align: center;
+  padding: 1rem;
+  color: #444444;
+}
+#navigation > li > a {
+  text-decoration: none;
+  color: #444444;
+}
+#navigation > li > a:hover {
+  text-decoration: underline;
+  color: black;
+}
 #bars-icon {
   height: 4.125rem;
   width: auto;
@@ -23,25 +50,6 @@ header {
   height: 4.125rem;
   width: auto;
   display: none;
-}
-.active, .collapse-button:hover {
-  background-color: #FFE376;
-}
-#navigationMenu {
-  /* display: none; */
-  list-style: none;
-  margin: 0;
-  padding: 0 18px;
-  background-color: #FFE376;
-  height: 0;
-  overflow: hidden;
-  transition: height 1s ease-out;
-  font-family: Roboto;
-}
-#navigationMenu > li {
-  text-align: center;
-  padding: 1rem;
-  color: #444444;
 }
 a.svg {
   position: relative;
