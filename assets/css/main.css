@@ -6,23 +6,20 @@
 }
 body {
   font-family: Roboto;
-  font-size: 16px;
   margin: 0;
   padding: 0;
   background-color: #444444;
 }
 header {
-  /* background: linear-gradient(to bottom, #ff0000, #ffff00, #00ff00); */
+  height: 4.125rem;
   background-color: #dfb306;
   overflow: hidden;
   transition: height 0.35s ease-in-out, background-color 0.5s ease-in-out;
 } 
 #navigation {
-  /* display: none; */
   list-style: none;
   margin: 0;
   padding: 0 1.125rem;
-  /* background-color: #FFE376; */
   height: 0;
   overflow: hidden;
   transition: height 0.35s ease-in-out;
@@ -40,27 +37,4 @@ header {
 #navigation > li > a:hover {
   text-decoration: underline;
   color: black;
-}
-#bars-icon {
-  height: 4.125rem;
-  width: auto;
-  display: block;
-} 
-#cross-icon {
-  height: 4.125rem;
-  width: auto;
-  display: none;
-}
-a.svg {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-}
-a.svg:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
 }
